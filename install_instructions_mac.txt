@@ -1,0 +1,41 @@
+On a mac:
+
+1. Open a terminal window
+
+2. Install homebrew (a package manager for mac):
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+3. Type “brew doctor” 
+a. If it tells you to install xcode, find it in the app store (should be free)
+b. If it gives you only warnings, you’re OK
+c. If it gives you errors, follow the suggestions or ask for help
+
+4. Install git (how you’ll get the code)
+    brew install git
+
+5. Clone the git repo
+        git clone https://github.com/rshorey/dcww-prediction
+
+6. Navigate to the git repo
+        cd dcww-prediction
+
+7. Install python3 (which comes with pip3)
+	brew install python3
+
+8. Install virtualenv
+	pip3 install virtualenv
+
+9. Create a virtual environment (this will prevent anything you install from messing with anything else you currently have installed)
+    virtualenv venv
+
+10. Activate your virtual environment
+        source venv/bin/activate
+ 
+11. Install pandas
+	pip3 install pandas
+
+12. Install scikit-learn
+	pip3 install scikit-learn
+
+13. Install scipy
+	pip3 install scipy
