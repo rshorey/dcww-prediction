@@ -175,8 +175,8 @@ def import_csv_data(filename):
 
 #processes data and creates the model when you run the code
 if __name__ == "__main__":
-    eng = clean_text("english_kyoto.txt")
-    sp = clean_text("spanish_kyoto.txt")
+    eng = clean_text("sample_text/english_kyoto.txt")
+    sp = clean_text("sample_text/spanish_kyoto.txt")
     features,sentence_dict,col_names = make_features(eng,0)
     features,sentence_dict,col_names = make_features(sp,1,features,sentence_dict)
     scaler, clf = create_lr_model(features,col_names,"index","language")
@@ -184,7 +184,7 @@ if __name__ == "__main__":
     
     #ucomment the following if you want to predict on some spanish language data from a different domain
     """
-    sp_test = clean_text("spanish_soledad.txt")
+    sp_test = clean_text("sample_text/spanish_soledad.txt")
     test_features,test_sentence_dict,test_col_names = make_features(sp_test,1)
     probs = predict(scaler,clf,test_features,test_col_names,"index","language")
     for p in probs:
@@ -193,10 +193,10 @@ if __name__ == "__main__":
     
     #uncomment to model English vs everything else
     """
-    eng = clean_text("english_1984.txt")
-    fr = clean_text("french_recherche.txt")
-    sp = clean_text("spanish_soledad.txt")
-    ger = clean_text("german_metamorph.txt")
+    eng = clean_text("sample_text/english_1984.txt")
+    fr = clean_text("sample_text/french_recherche.txt")
+    sp = clean_text("sample_text/spanish_soledad.txt")
+    ger = clean_text("sample_text/german_metamorph.txt")
     features,sentence_dict,col_names = make_features(eng,0)
     features,sentence_dict,col_names = make_features(sp,1,features,sentence_dict)
     features,sentence_dict,col_names = make_features(fr,1,features,sentence_dict)
