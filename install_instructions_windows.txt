@@ -5,7 +5,7 @@ NOTE: I did not have a windows machine to try this on, so it may or may not work
 2) Open a shell window
 
 
-[note: it's possible you'll want "pip" instead of "pip3"]
+[note: it's possible you'll want "pip" instead of "pip3" for all of the following]
 3) Install virtualenv
 	pip3 install virtualenv
 
