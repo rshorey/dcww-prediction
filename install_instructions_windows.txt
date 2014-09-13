@@ -1,0 +1,25 @@
+NOTE: I did not have a windows machine to try this on, so it may or may not work. No git install instructions included
+
+1) Install python3.4: https://www.python.org/downloads/release/python-341/ (it comes with pip!)
+
+2) Open a shell window
+
+
+[note: it's possible you'll want "pip" instead of "pip3"]
+3) Install virtualenv
+	pip3 install virtualenv
+
+4) Create a virtual environment (this will prevent anything you install from messing with anything else you currently have installed)
+    virtualenv venv
+
+5) Activate your virtual environment
+        source venv/bin/activate
+ 
+6) Install pandas
+	pip3 install pandas
+
+7) Install scikit-learn
+	pip3 install scikit-learn
+
+8) Install scipy
+	pip3 install scipy
